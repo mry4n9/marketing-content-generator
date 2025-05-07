@@ -1,0 +1,11 @@
+# requirements.txt
+
+
+streamlit
+openai>=1.0.0 # Ensure you have the latest openai library
+requests
+beautifulsoup4
+pypdf2
+python-pptx
+openpyxl
+
