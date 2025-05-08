@@ -49,7 +49,7 @@ downloadable_asset_url = st.sidebar.text_input(
     placeholder="https://www.example.com/assets/whitepaper.pdf"
 )
 
-num_content_pieces = st.sidebar.slider("Number of Content Pieces per Objective (for Email/Social)", 10, 20, 10)
+num_content_pieces = st.sidebar.slider("Number of Content Pieces per Objective (for Email/Social)", 1, 20, 10)
 
 # --- Generate Button ---
 if st.sidebar.button("✨ Generate Content", type="primary", use_container_width=True):
@@ -161,9 +161,9 @@ if st.sidebar.button("✨ Generate Content", type="primary", use_container_width
                 st.success("Excel report compiled successfully!")
 
                 # 5. Enable Download
-                st.subheader("Step 5: Download Your Report")
+                st.subheader("Step 5: Download Your Marketing Content")
                 st.download_button(
-                    label="📥 Download Excel Report",
+                    label="📥 Download Excel File",
                     data=excel_bytes,
                     file_name=excel_file_name,
                     mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
@@ -180,4 +180,4 @@ else:
     st.info("Fill in the details in the sidebar and click 'Generate Content' to start.")
 
 st.sidebar.markdown("---")
-st.sidebar.markdown("Developed for internal branding & marketing consultancy.")
+st.sidebar.markdown("By M.")
