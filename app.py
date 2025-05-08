@@ -58,7 +58,7 @@ downloadable_asset_url_raw = st.sidebar.text_input(
     placeholder="www.example.com/assets/whitepaper.pdf"
 )
 
-num_content_pieces = st.sidebar.slider("Number of Content Pieces per Objective (for Email/Social)", 10, 20, 10)
+num_content_pieces = st.sidebar.slider("Number of Content Pieces per Objective (for Email/Social)", 1, 20, 10)
 
 # --- Generate Button ---
 if st.sidebar.button("✨ Generate Content", type="primary", use_container_width=True):
@@ -224,4 +224,4 @@ else:
     st.info("Fill in the details in the sidebar and click 'Generate Content' to start.")
 
 st.sidebar.markdown("---")
-st.sidebar.markdown("Developed for internal branding & marketing consultancy.")
+st.sidebar.markdown("Made by M.")
